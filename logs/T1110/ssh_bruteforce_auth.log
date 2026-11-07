@@ -1,0 +1,23 @@
+Nov  7 21:14:50 labhost useradd[16737]: new user: name=sshd, UID=129, GID=65534, home=/run/sshd, shell=/usr/sbin/nologin, from=none
+Nov  7 21:14:50 labhost usermod[16744]: change user 'sshd' password
+Nov  7 21:14:50 labhost chage[16751]: changed password expiry for sshd
+Nov  7 21:14:51 labhost sshd[16867]: Server listening on 0.0.0.0 port 22.
+Nov  7 21:14:51 labhost sshd[16867]: Server listening on :: port 22.
+Nov  7 21:29:41 labhost sshd[17511]: Received disconnect from 192.0.2.10 port 44530:11: Bye Bye [preauth]
+Nov  7 21:29:41 labhost sshd[17511]: Disconnected from authenticating user testvictim 192.0.2.10 port 44530 [preauth]
+Nov  7 21:29:42 labhost sshd[17515]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.0.2.10  user=testvictim
+Nov  7 21:29:42 labhost sshd[17516]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.0.2.10  user=testvictim
+Nov  7 21:29:43 labhost sshd[17515]: Failed password for testvictim from 192.0.2.10 port 44532 ssh2
+Nov  7 21:29:43 labhost sshd[17516]: Failed password for testvictim from 192.0.2.10 port 44534 ssh2
+Nov  7 21:29:46 labhost sshd[17515]: Failed password for testvictim from 192.0.2.10 port 44532 ssh2
+Nov  7 21:29:46 labhost sshd[17516]: Failed password for testvictim from 192.0.2.10 port 44534 ssh2
+Nov  7 21:29:48 labhost sshd[17515]: Failed password for testvictim from 192.0.2.10 port 44532 ssh2
+Nov  7 21:29:48 labhost sshd[17516]: Failed password for testvictim from 192.0.2.10 port 44534 ssh2
+Nov  7 21:29:48 labhost sshd[17516]: Connection closed by authenticating user testvictim 192.0.2.10 port 44534 [preauth]
+Nov  7 21:29:48 labhost sshd[17516]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.0.2.10  user=testvictim
+Nov  7 21:29:48 labhost sshd[17515]: Connection closed by authenticating user testvictim 192.0.2.10 port 44532 [preauth]
+Nov  7 21:29:48 labhost sshd[17515]: PAM 2 more authentication failures; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.0.2.10  user=testvictim
+Nov  7 21:46:52 labhost sudo: cyber_vortex : TTY=pts/0 ; PWD=/ ; USER=root ; COMMAND=/usr/bin/grep sshd /var/log/auth.log
+Nov  7 21:48:12 labhost sudo: cyber_vortex : TTY=pts/0 ; PWD=/home/cyber_vortex ; USER=root ; COMMAND=/usr/bin/grep sshd /var/log/auth.log
+Nov  7 22:05:29 labhost sudo: cyber_vortex : TTY=pts/0 ; PWD=/home/cyber_vortex ; USER=root ; COMMAND=/usr/bin/grep sshd /var/log/auth.log
+Nov  7 22:07:32 labhost sudo: cyber_vortex : TTY=pts/0 ; PWD=/home/cyber_vortex ; USER=root ; COMMAND=/usr/bin/grep -a sshd /var/log/auth.log
