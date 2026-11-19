@@ -4,7 +4,7 @@ A public repository of security detection rules where every rule is proven by a 
 
 For each technique in the MITRE ATT&CK framework, this project keeps four things together: a recorded attack, a detection rule, an automatic test, and a line on the coverage table below. If a rule stops matching its recorded attack, the build fails. We add one new technique every week.
 
-Built by Abdulmujeeb Uthman and Rita.
+Built by Abdulmujeeb Uthman and Rita Nwali.
 
 ## How it works
 
