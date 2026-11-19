@@ -1,0 +1,26 @@
+title: SSH Brute Force - Multiple Failed Logins
+id: 7f3a1e2c-9b4d-4a6e-8c1f-2d5b9e8a7c6d
+status: experimental
+description: >
+  Detects multiple failed SSH password authentication attempts
+  against the same account in a short time window, consistent
+  with a password guessing (brute force) attack (T1110.001).
+references:
+  - https://attack.mitre.org/techniques/T1110/
+  - https://attack.mitre.org/techniques/T1110/001/
+author: Rita
+date: 2026-11-07
+tags:
+  - attack.credential_access
+  - attack.t1110.001
+logsource:
+  product: linux
+  service: auth
+detection:
+  keywords:
+    - 'Failed password for'
+  condition: keywords
+falsepositives:
+  - A legitimate user repeatedly mistyping their password
+  - Automated jobs or scripts using an outdated or incorrect credential
+level: medium
