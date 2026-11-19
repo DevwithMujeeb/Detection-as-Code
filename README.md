@@ -17,7 +17,7 @@ Built by Abdulmujeeb Uthman and Rita.
 
 | ATT&CK ID | Technique         | Attack recorded | Rule    | Test    |
 | --------- | ----------------- | --------------- | ------- | ------- |
-| T1110     | Brute Force (SSH) | Pending         | Pending | Pending |
+| T1110     | Brute Force (SSH) | Done         | Done | Pending |
 
 Status values: Pending, In progress, Done.
 
